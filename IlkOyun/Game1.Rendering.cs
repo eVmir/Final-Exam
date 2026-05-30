@@ -516,10 +516,12 @@ public partial class Game1
             null,
             false));
 
-        DrawFilledRectangle(new Rectangle(404, 358, 468, 64), new Color(255, 255, 255, 18));
-        DrawRectangleOutline(new Rectangle(404, 358, 468, 64), new Color(205, 216, 255, 82), 2);
-        DrawTextBlock("Enter  Start Game", new Vector2(510, 378), Color.WhiteSmoke);
-        DrawTextBlock("Esc  Exit", new Vector2(576, 456), new Color(200, 207, 228));
+        DrawFilledRectangle(new Rectangle(404, 358, 468, 64), new Color(255, 255, 255, 10));
+        DrawRectangleOutline(new Rectangle(404, 358, 468, 64), new Color(188, 200, 235, 58), 2);
+        Vector2 startTextPosition = new(510, 378);
+        DrawTextBlock("Enter  Start Game", startTextPosition + new Vector2(1f, 1f), new Color(0, 0, 0, 120));
+        DrawTextBlock("Enter  Start Game", startTextPosition, new Color(214, 220, 234));
+        DrawTextBlock("Esc  Exit", new Vector2(576, 456), new Color(176, 184, 206));
     }
 
     private void DrawResultScreen()
