@@ -475,16 +475,67 @@ public partial class Game1
         DrawTextBlock(battleControls, controlsPosition, new Color(232, 238, 255, 220));
     }
 
+    private void DrawTitleScreen()
+    {
+        DrawOverworldBackground();
+        DrawFilledRectangle(new Rectangle(0, 0, WindowWidth, WindowHeight), new Color(8, 10, 22, 144));
+
+        Rectangle titlePanel = new(154, 110, 972, 484);
+        Rectangle titleAccent = new(titlePanel.X + 18, titlePanel.Y + 18, titlePanel.Width - 36, titlePanel.Height - 36);
+        DrawFilledRectangle(titlePanel, new Color(9, 14, 30, 196));
+        DrawRectangleOutline(titlePanel, new Color(186, 204, 255, 150), 2);
+        DrawFilledRectangle(titleAccent, new Color(18, 27, 52, 160));
+
+        float pulse = (MathF.Sin(_animationTimer * 2.4f) + 1f) * 0.5f;
+        Color glow = new(
+            (byte)MathHelper.Lerp(165, 220, pulse),
+            (byte)MathHelper.Lerp(192, 236, pulse),
+            (byte)MathHelper.Lerp(255, 255, pulse),
+            (byte)255);
+
+        DrawTextBlock("SOUL HUNTER", new Vector2(362, 170), glow);
+        DrawTextBlock("Platform adventure with elemental spirit battles", new Vector2(318, 224), new Color(211, 220, 244));
+
+        Rectangle leftShowcase = new(202, 288, 270, 220);
+        Rectangle rightShowcase = new(810, 270, 280, 246);
+        DrawFilledRectangle(new Rectangle(leftShowcase.X + 34, leftShowcase.Bottom - 10, leftShowcase.Width - 68, 14), new Color(0, 0, 0, 68));
+        DrawFilledRectangle(new Rectangle(rightShowcase.X + 40, rightShowcase.Bottom - 12, rightShowcase.Width - 80, 16), new Color(0, 0, 0, 72));
+        Rectangle titleMageBounds = new(212 + (int)(MathF.Sin(_animationTimer * 1.8f) * 4f), 236, 260, 278);
+        Rectangle titleMageDestination = GetFittedTextureRectangle(_overworldMageTexture, titleMageBounds, 1.02f, true);
+        _spriteBatch.Draw(_overworldMageTexture, titleMageDestination, Color.White);
+        DrawSpiritFigure(rightShowcase, new EnemyDefinition(
+            "Title Spirit",
+            1,
+            1,
+            1,
+            true,
+            string.Empty,
+            string.Empty,
+            new Color(146, 115, 221),
+            new Color(238, 167, 232),
+            null,
+            false));
+
+        DrawFilledRectangle(new Rectangle(404, 358, 468, 64), new Color(255, 255, 255, 18));
+        DrawRectangleOutline(new Rectangle(404, 358, 468, 64), new Color(205, 216, 255, 82), 2);
+        DrawTextBlock("Enter  Start Game", new Vector2(510, 378), Color.WhiteSmoke);
+        DrawTextBlock("Esc  Exit", new Vector2(576, 456), new Color(200, 207, 228));
+    }
+
     private void DrawResultScreen()
     {
         bool isVictory = _gamePhase == GamePhase.Victory;
-        Rectangle panel = new(140, 154, 1000, 360);
+        DrawFilledRectangle(new Rectangle(0, 0, WindowWidth, WindowHeight), new Color(10, 12, 24, 210));
 
-        DrawFilledRectangle(panel, isVictory ? new Color(232, 248, 236) : new Color(252, 234, 234));
-        DrawRectangleOutline(panel, Color.Black, 4);
+        Rectangle panel = new(188, 136, 904, 432);
+        Rectangle innerPanel = new(panel.X + 18, panel.Y + 18, panel.Width - 36, panel.Height - 36);
+        DrawFilledRectangle(panel, isVictory ? new Color(26, 44, 40, 232) : new Color(54, 28, 32, 232));
+        DrawRectangleOutline(panel, isVictory ? new Color(157, 236, 194, 140) : new Color(255, 182, 194, 140), 2);
+        DrawFilledRectangle(innerPanel, isVictory ? new Color(37, 64, 56, 210) : new Color(72, 36, 40, 210));
 
-        DrawTextBlock(isVictory ? "Battle Result" : "Defeat", new Vector2(220, 220), Color.Black);
-        DrawTextBlock(_statusMessage, new Vector2(220, 286), Color.DarkSlateGray);
+        DrawTextBlock(isVictory ? "Cycle Resolved" : "Soul Lost", new Vector2(460, 196), Color.WhiteSmoke);
+        DrawWrappedText(_statusMessage, new Rectangle(260, 276, 760, 120), new Color(224, 229, 240));
+        DrawTextBlock("Enter  Continue", new Vector2(512, 464), new Color(208, 216, 236));
     }
 
     private void DrawSummonRow(string title, bool isAvailable, string detail, Vector2 position)

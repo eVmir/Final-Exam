@@ -4,6 +4,7 @@ namespace IlkOyun;
 
 internal enum GamePhase
 {
+    TitleScreen,
     Overworld,
     Battle,
     Victory,

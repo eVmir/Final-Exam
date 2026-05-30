@@ -128,6 +128,7 @@ public partial class Game1 : Game
     {
         BuildOverworld();
         ResetFullRun();
+        _gamePhase = GamePhase.TitleScreen;
 
         base.Initialize();
     }
@@ -178,6 +179,9 @@ public partial class Game1 : Game
 
         switch (_gamePhase)
         {
+            case GamePhase.TitleScreen:
+                UpdateTitleScreen();
+                break;
             case GamePhase.Overworld:
                 UpdateOverworld(gameTime);
                 break;
@@ -203,6 +207,9 @@ public partial class Game1 : Game
 
         switch (_gamePhase)
         {
+            case GamePhase.TitleScreen:
+                DrawTitleScreen();
+                break;
             case GamePhase.Overworld:
                 DrawOverworld();
                 break;
@@ -240,6 +247,18 @@ public partial class Game1 : Game
         if (_playerPosition.Y > WindowHeight + 120)
         {
             RespawnToCheckpoint("You fell from the overworld. The mage returned to the checkpoint.");
+        }
+    }
+
+    private void UpdateTitleScreen()
+    {
+        _cameraX = MathHelper.Clamp((_animationTimer * 20f) % Math.Max(1f, WorldWidth - WindowWidth), 0f, WorldWidth - WindowWidth);
+
+        if (WasKeyPressed(Keys.Enter))
+        {
+            ResetOverworldState();
+            _statusMessage = "The hunt begins.";
+            PlaySound(_pickupSound, 0.42f, 0.08f);
         }
     }
 
