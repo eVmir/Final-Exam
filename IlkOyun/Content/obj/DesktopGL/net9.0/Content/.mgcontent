@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/DefaultFont.spritefont</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Sprites/battle_arena_bg.png</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Sprites/rabbit_mage_battle.png</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Sprites/ghost_enemy_base.png</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Sprites/rabbit_mage_overworld.png</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Sprites/roaming_spirit_overworld.png</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Sprites/ground_enemy_fire.png</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Sprites/ground_enemy_water.png</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Sprites/ground_enemy_wind.png</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Sprites/ground_enemy_abyss.png</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Sprites/wind_wraith_overworld.png</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Sprites/water_golem_overworld.png</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Audio/jump.wav</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Audio/dash.wav</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Audio/pickup.wav</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Audio/switch.wav</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Audio/stomp.wav</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Audio/hurt.wav</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Audio/battle_enter.wav</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Audio/spell.wav</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Audio/enemy_cast.wav</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Audio/catch_success.wav</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Audio/catch_fail.wav</File>
+    <File>C:/Users/isu/Documents/New project/IlkOyun/Content/Audio/victory.wav</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

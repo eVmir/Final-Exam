@@ -1,0 +1,134 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+
+#begin DefaultFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/build:DefaultFont.spritefont
+
+#begin Sprites/battle_arena_bg.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Sprites/battle_arena_bg.png
+
+#begin Sprites/rabbit_mage_battle.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Sprites/rabbit_mage_battle.png
+
+#begin Sprites/ghost_enemy_base.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Sprites/ghost_enemy_base.png
+
+#begin Sprites/rabbit_mage_overworld.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Sprites/rabbit_mage_overworld.png
+
+#begin Sprites/roaming_spirit_overworld.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Sprites/roaming_spirit_overworld.png
+
+#begin Sprites/ground_enemy_fire.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Sprites/ground_enemy_fire.png
+
+#begin Sprites/ground_enemy_water.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Sprites/ground_enemy_water.png
+
+#begin Sprites/ground_enemy_wind.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Sprites/ground_enemy_wind.png
+
+#begin Sprites/ground_enemy_abyss.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Sprites/ground_enemy_abyss.png
+
+#begin Sprites/wind_wraith_overworld.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Sprites/wind_wraith_overworld.png
+
+#begin Sprites/water_golem_overworld.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Sprites/water_golem_overworld.png
+
+#begin Audio/jump.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/build:Audio/jump.wav
+
+#begin Audio/dash.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/build:Audio/dash.wav
+
+#begin Audio/pickup.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/build:Audio/pickup.wav
+
+#begin Audio/switch.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/build:Audio/switch.wav
+
+#begin Audio/stomp.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/build:Audio/stomp.wav
+
+#begin Audio/hurt.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/build:Audio/hurt.wav
+
+#begin Audio/battle_enter.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/build:Audio/battle_enter.wav
+
+#begin Audio/spell.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/build:Audio/spell.wav
+
+#begin Audio/enemy_cast.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/build:Audio/enemy_cast.wav
+
+#begin Audio/catch_success.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/build:Audio/catch_success.wav
+
+#begin Audio/catch_fail.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/build:Audio/catch_fail.wav
+
+#begin Audio/victory.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/build:Audio/victory.wav
